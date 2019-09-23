@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:id="@+id/img_poster"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_poster"
+        android:text="@string/title"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_overview"
+        android:layout_below="@id/txt_title"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="3"
+        android:layout_toRightOf="@id/img_poster"
+        android:text="Lorem"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/img_poster"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="26dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_today"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:id="@+id/ga"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_date_released"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/yyyy"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                android:padding="10dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_user_score"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/rating"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_av_timer"
+                android:padding="10dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_runtime"
+                android:padding="5dp"
+                android:fontFamily="@string/app_name"
+                android:textStyle="bold"
+                android:text="hh mm"
+                android:textSize="10dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
